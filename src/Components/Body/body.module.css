@@ -1,0 +1,47 @@
+.btn {
+  width: 100%;
+  position: fixed;
+  top: 70%;
+  text-align: center;
+}
+.btn button {
+  padding: 8px;
+  transition: 0.3s;
+  box-shadow: 4px 6px #000000;
+}
+.btn button:active {
+  animation: move 0.5s;
+}
+.container {
+  padding: 30px;
+  margin: 10px;
+}
+.timetaken {
+ padding-top: 10px;
+}
+.timetaken h3 {
+  margin-top: 20px;
+}
+.description {
+  text-align: center;
+  margin-top: 50px;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px) translateX(5px);
+  }
+  100% {
+    transform: translateY(5px) translateX(5px);
+  }
+}
+@media (max-width: 767px) {
+  .btn {
+    width: 100%;
+    position: relative;
+   
+    text-align: center;
+  }
+}
